@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="Computer-Vision Enhanced Water-Stream Control and Fire Suppression for Industrial Firefighting Robots"
+          name="description">
+    <meta content="FireJet" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Computer-Vision Enhanced Water-Stream Control and Fire Suppression for Industrial Firefighting Robots</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+    <link href="./static/css/bulma.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+    <link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+    <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+    <link href="./static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link href="./static/images/favicon.ico" rel="icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <style>
+        .special-font {
+            font-family: 'Caveat', cursive;
+            font-size: 24px;
+        }
+        .visual-media {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        .award-caption {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #4a4a4a;
+        }
+        .award-box {
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .award-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: auto; /* Push caption to bottom */
+        }
+    </style>
+</head>
+<body>
+
+<nav aria-label="main navigation" class="navbar" role="navigation">
+    <div class="navbar-brand">
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+</nav>
+
+
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-6 has-text-centered">
+                <h2 class="title is-4">System Overview</h2>
+                <img src="./static/images/1-image.jpg" class="visual-media" alt="Firefighting Robot Appearance">
+                <p class="content mt-2">Fig 1. The Firefighting Robot Platform.</p>
+            </div>
+            <div class="column is-6 has-text-centered">
+                <h2 class="title is-4">Suppression Demo</h2>
+                <video autoplay controls muted loop playsinline class="visual-media">
+                    <source src="./static/Video/1-video.mp4" type="video/mp4">
+                </video>
+                <p class="content mt-2">Video 1. Autonomous Fire Suppression Demonstration.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Industrial fires involve flammable materials, high-pressure equipment, and complex layouts, making efficient and safe suppression essential. Firefighting robots have great potential, but their effectiveness depends on precise visual perception. However, existing methods treat fire detection, flame segmentation, and water-jet landing point localization as separate tasks and lack a unified, collaborative perception framework. 
+                    </p>
+                    <p>
+                        To address this problem, we propose <strong>FireJet</strong>, a video-stream-based coupled visual firefighting system that integrates all three key tasks within a single framework. FireJet adopts an edge-cloud collaborative architecture: the robot uses an improved YOLO-Fire model for lightweight fire detection, while the cloud performs high-precision flame segmentation and water-jet landing-point localization based on SAM2 with automatic prompt generation. Experiments in industrial-like scenarios show that FireJet achieves stable and accurate multi-task visual perception, offering a unified and reliable visual foundation for closed-loop firefighting control.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<section class="section hero is-light">
+    <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Experimental Results (Fig. 4)</h2>
+        <br/>
+        
+        <div class="columns is-centered is-mobile is-multiline">
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="columns is-centered is-mobile is-multiline">
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column is-3-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/4-7.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Comparative Analysis (Fig. 5 & 6)</h2>
+        <br/>
+        
+        <div class="columns is-centered is-mobile is-multiline">
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/5-1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/6-2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/5-3.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/6-4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/5-5.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="column is-6-desktop is-6-mobile">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./static/Video/6-6.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content has-text-centered">
+                    <p>
+                        This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
